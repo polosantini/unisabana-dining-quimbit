@@ -1,0 +1,66 @@
+{
+  "categorias": [
+    {
+      "id": "estacion_cafe",
+      "nombre": "Estacion de cafe",
+      "items": [
+        { "id": "cafe", "nombre": "Cafe americano", "precioUnitario": 3500, "unidad": "persona" },
+        { "id": "cafe_capuccino", "nombre": "Capuccino", "precioUnitario": 5500, "unidad": "persona" },
+        { "id": "te_aromatica", "nombre": "Te y aromaticas", "precioUnitario": 3000, "unidad": "persona" }
+      ]
+    },
+    {
+      "id": "refrigerios",
+      "nombre": "Refrigerios",
+      "items": [
+        { "id": "croissant_queso", "nombre": "Croissant de queso", "precioUnitario": 4800, "unidad": "unidad" },
+        { "id": "muffin_chocolate", "nombre": "Muffin de chocolate", "precioUnitario": 4500, "unidad": "unidad" },
+        { "id": "sandwich_mini", "nombre": "Mini sandwich gourmet", "precioUnitario": 6200, "unidad": "unidad" }
+      ]
+    },
+    {
+      "id": "desayunos",
+      "nombre": "Desayunos",
+      "items": [
+        { "id": "desayuno_continental", "nombre": "Desayuno continental", "precioUnitario": 18500, "unidad": "persona" },
+        { "id": "desayuno_americano", "nombre": "Desayuno americano", "precioUnitario": 22000, "unidad": "persona" }
+      ]
+    },
+    {
+      "id": "almuerzos",
+      "nombre": "Almuerzos",
+      "items": [
+        { "id": "almuerzo_ejecutivo", "nombre": "Almuerzo ejecutivo", "precioUnitario": 28000, "unidad": "persona" },
+        { "id": "almuerzo_vegetariano", "nombre": "Almuerzo vegetariano", "precioUnitario": 26000, "unidad": "persona" },
+        { "id": "almuerzo_premium", "nombre": "Almuerzo premium", "precioUnitario": 42000, "unidad": "persona" }
+      ]
+    },
+    {
+      "id": "canapes",
+      "nombre": "Canapes",
+      "items": [
+        { "id": "canape_salmon", "nombre": "Canape de salmon ahumado", "precioUnitario": 7500, "unidad": "unidad" },
+        { "id": "canape_queso_azul", "nombre": "Canape de queso azul y pera", "precioUnitario": 6800, "unidad": "unidad" },
+        { "id": "canape_jamon", "nombre": "Canape de jamon serrano", "precioUnitario": 7200, "unidad": "unidad" }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "nombre": "Bebidas",
+      "items": [
+        { "id": "jugo_natural", "nombre": "Jugo natural en agua", "precioUnitario": 4200, "unidad": "persona" },
+        { "id": "agua_premium", "nombre": "Agua premium 500ml", "precioUnitario": 3800, "unidad": "unidad" },
+        { "id": "vino_tinto", "nombre": "Copa de vino tinto", "precioUnitario": 14000, "unidad": "unidad" }
+      ]
+    },
+    {
+      "id": "postres",
+      "nombre": "Postres",
+      "items": [
+        { "id": "postre_dia", "nombre": "Postre del dia", "precioUnitario": 8500, "unidad": "persona" },
+        { "id": "tres_leches", "nombre": "Tres leches", "precioUnitario": 9500, "unidad": "porcion" },
+        { "id": "brownie", "nombre": "Brownie con helado", "precioUnitario": 9000, "unidad": "porcion" }
+      ]
+    }
+  ]
+}

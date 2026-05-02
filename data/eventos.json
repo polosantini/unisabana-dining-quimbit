@@ -1,0 +1,95 @@
+{
+  "eventos": [
+    {
+      "id": "SD-2840",
+      "cliente": "Facultad de Derecho",
+      "contacto": "Carlos Pineda",
+      "fecha": "2026-05-12",
+      "hora": "08:30",
+      "lugar": "Auditorio Principal - Edificio A",
+      "personas": 60,
+      "tipoServicio": "desayuno",
+      "menu": [],
+      "centroCostos": "CC-1102",
+      "estado": "BORRADOR",
+      "meseroAsignado": null,
+      "cotizacion": null,
+      "restricciones": "",
+      "version": 1,
+      "historial": []
+    },
+    {
+      "id": "SD-2841",
+      "cliente": "Departamento de Ingenieria",
+      "contacto": "Ana Gomez",
+      "fecha": "2026-05-06",
+      "hora": "10:00",
+      "lugar": "Sala de Juntas - Edificio E",
+      "personas": 25,
+      "tipoServicio": "estacion_cafe",
+      "menu": ["cafe", "croissant_queso", "muffin_chocolate"],
+      "centroCostos": "CC-2341",
+      "estado": "EN_COTIZACION",
+      "meseroAsignado": null,
+      "cotizacion": null,
+      "restricciones": "2 personas vegetarianas",
+      "version": 1,
+      "historial": []
+    },
+    {
+      "id": "SD-2842",
+      "cliente": "Direccion de Mercadeo",
+      "contacto": "Laura Restrepo",
+      "fecha": "2026-05-08",
+      "hora": "12:30",
+      "lugar": "Terraza - Edificio K",
+      "personas": 40,
+      "tipoServicio": "almuerzo",
+      "menu": ["almuerzo_ejecutivo", "jugo_natural", "postre_dia"],
+      "centroCostos": "CC-3120",
+      "estado": "CONFIRMADO",
+      "meseroAsignado": null,
+      "cotizacion": {
+        "subtotal": 1200000,
+        "iva": 228000,
+        "total": 1428000,
+        "validadaPor": "admin",
+        "fechaValidacion": "2026-05-02T14:20:00Z"
+      },
+      "restricciones": "1 persona celiaca",
+      "version": 2,
+      "historial": [
+        { "fecha": "2026-05-01T10:00:00Z", "accion": "creado", "actor": "cliente" },
+        { "fecha": "2026-05-02T14:20:00Z", "accion": "cotizacion_validada", "actor": "admin" }
+      ]
+    },
+    {
+      "id": "SD-2843",
+      "cliente": "Rectoria",
+      "contacto": "Mauricio Vargas",
+      "fecha": "2026-05-04",
+      "hora": "16:00",
+      "lugar": "Sala Ejecutiva - Edificio Central",
+      "personas": 15,
+      "tipoServicio": "canapes",
+      "menu": ["canape_salmon", "canape_queso_azul", "vino_tinto", "agua_premium"],
+      "centroCostos": "CC-0001",
+      "estado": "ASIGNADO",
+      "meseroAsignado": "M-007",
+      "cotizacion": {
+        "subtotal": 850000,
+        "iva": 161500,
+        "total": 1011500,
+        "validadaPor": "admin",
+        "fechaValidacion": "2026-05-01T09:00:00Z"
+      },
+      "restricciones": "Sin mariscos para 1 persona",
+      "version": 3,
+      "historial": [
+        { "fecha": "2026-04-29T11:00:00Z", "accion": "creado", "actor": "cliente" },
+        { "fecha": "2026-05-01T09:00:00Z", "accion": "cotizacion_validada", "actor": "admin" },
+        { "fecha": "2026-05-01T15:30:00Z", "accion": "mesero_asignado", "actor": "admin" }
+      ]
+    }
+  ]
+}
