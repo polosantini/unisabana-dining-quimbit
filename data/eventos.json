@@ -1,24 +1,6 @@
 {
   "eventos": [
     {
-      "id": "SD-2840",
-      "cliente": "Facultad de Derecho",
-      "contacto": "Carlos Pineda",
-      "fecha": "2026-05-12",
-      "hora": "08:30",
-      "lugar": "Auditorio Principal - Edificio A",
-      "personas": 60,
-      "tipoServicio": "desayuno",
-      "menu": [],
-      "centroCostos": "CC-1102",
-      "estado": "BORRADOR",
-      "meseroAsignado": null,
-      "cotizacion": null,
-      "restricciones": "",
-      "version": 1,
-      "historial": []
-    },
-    {
       "id": "SD-2841",
       "cliente": "Departamento de Ingenieria",
       "contacto": "Ana Gomez",
@@ -27,14 +9,29 @@
       "lugar": "Sala de Juntas - Edificio E",
       "personas": 25,
       "tipoServicio": "estacion_cafe",
-      "menu": ["cafe", "croissant_queso", "muffin_chocolate"],
+      "menu": [
+        "cafe",
+        "croissant_queso",
+        "muffin_chocolate"
+      ],
       "centroCostos": "CC-2341",
       "estado": "EN_COTIZACION",
       "meseroAsignado": null,
       "cotizacion": null,
       "restricciones": "2 personas vegetarianas",
+      "tareas": {
+        "setup_mesa": false,
+        "servicio": false,
+        "limpieza": false
+      },
       "version": 1,
-      "historial": []
+      "historial": [
+        {
+          "fecha": "2026-05-05T09:00:00Z",
+          "accion": "creado",
+          "actor": "cliente"
+        }
+      ]
     },
     {
       "id": "SD-2842",
@@ -45,9 +42,13 @@
       "lugar": "Terraza - Edificio K",
       "personas": 40,
       "tipoServicio": "almuerzo",
-      "menu": ["almuerzo_ejecutivo", "jugo_natural", "postre_dia"],
+      "menu": [
+        "almuerzo_ejecutivo",
+        "jugo_natural",
+        "postre_dia"
+      ],
       "centroCostos": "CC-3120",
-      "estado": "CONFIRMADO",
+      "estado": "COTIZADO",
       "meseroAsignado": null,
       "cotizacion": {
         "subtotal": 1200000,
@@ -57,10 +58,23 @@
         "fechaValidacion": "2026-05-02T14:20:00Z"
       },
       "restricciones": "1 persona celiaca",
+      "tareas": {
+        "setup_mesa": false,
+        "servicio": false,
+        "limpieza": false
+      },
       "version": 2,
       "historial": [
-        { "fecha": "2026-05-01T10:00:00Z", "accion": "creado", "actor": "cliente" },
-        { "fecha": "2026-05-02T14:20:00Z", "accion": "cotizacion_validada", "actor": "admin" }
+        {
+          "fecha": "2026-05-01T10:00:00Z",
+          "accion": "creado",
+          "actor": "cliente"
+        },
+        {
+          "fecha": "2026-05-02T14:20:00Z",
+          "accion": "cotizacion_validada",
+          "actor": "admin"
+        }
       ]
     },
     {
@@ -72,10 +86,15 @@
       "lugar": "Sala Ejecutiva - Edificio Central",
       "personas": 15,
       "tipoServicio": "canapes",
-      "menu": ["canape_salmon", "canape_queso_azul", "vino_tinto", "agua_premium"],
+      "menu": [
+        "canape_salmon",
+        "canape_queso_azul",
+        "vino_tinto",
+        "agua_premium"
+      ],
       "centroCostos": "CC-0001",
       "estado": "ASIGNADO",
-      "meseroAsignado": "M-007",
+      "meseroAsignado": "Carlos M.",
       "cotizacion": {
         "subtotal": 850000,
         "iva": 161500,
@@ -84,11 +103,88 @@
         "fechaValidacion": "2026-05-01T09:00:00Z"
       },
       "restricciones": "Sin mariscos para 1 persona",
-      "version": 3,
+      "tareas": {
+        "setup_mesa": true,
+        "servicio": false,
+        "limpieza": false
+      },
+      "version": 5,
       "historial": [
-        { "fecha": "2026-04-29T11:00:00Z", "accion": "creado", "actor": "cliente" },
-        { "fecha": "2026-05-01T09:00:00Z", "accion": "cotizacion_validada", "actor": "admin" },
-        { "fecha": "2026-05-01T15:30:00Z", "accion": "mesero_asignado", "actor": "admin" }
+        {
+          "fecha": "2026-04-29T11:00:00Z",
+          "accion": "creado",
+          "actor": "cliente"
+        },
+        {
+          "fecha": "2026-05-01T09:00:00Z",
+          "accion": "cotizacion_validada",
+          "actor": "admin"
+        },
+        {
+          "fecha": "2026-05-01T15:30:00Z",
+          "accion": "mesero_asignado",
+          "actor": "admin"
+        },
+        {
+          "fecha": "2026-05-02T20:16:21.483Z",
+          "accion": "tarea_setup_mesa_completada",
+          "actor": "mesero"
+        },
+        {
+          "fecha": "2026-05-02T20:16:21.528Z",
+          "accion": "tarea_setup_mesa_completada",
+          "actor": "mesero"
+        }
+      ]
+    },
+    {
+      "id": "SD-2844",
+      "cliente": "Facultad de Psicologia",
+      "contacto": "Sandra Molina",
+      "fecha": "2026-05-10",
+      "hora": "09:00",
+      "lugar": "Sala de Conferencias - Edificio B",
+      "personas": 30,
+      "tipoServicio": "refrigerio",
+      "menu": [
+        "croissant_queso",
+        "muffin_chocolate",
+        "jugo_natural",
+        "cafe"
+      ],
+      "centroCostos": "CC-4510",
+      "estado": "CONFIRMADO",
+      "meseroAsignado": null,
+      "cotizacion": {
+        "subtotal": 420000,
+        "iva": 79800,
+        "total": 499800,
+        "validadaPor": "admin",
+        "fechaValidacion": "2026-05-03T11:00:00Z"
+      },
+      "restricciones": "",
+      "tareas": {
+        "setup_mesa": false,
+        "servicio": false,
+        "limpieza": false
+      },
+      "version": 2,
+      "historial": [
+        {
+          "fecha": "2026-05-02T08:00:00Z",
+          "accion": "creado",
+          "actor": "cliente"
+        },
+        {
+          "fecha": "2026-05-03T11:00:00Z",
+          "accion": "cotizacion_validada",
+          "actor": "admin"
+        },
+        {
+          "fecha": "2026-05-03T11:30:00Z",
+          "accion": "confirmado",
+          "actor": "cliente"
+        }
       ]
     }
   ]

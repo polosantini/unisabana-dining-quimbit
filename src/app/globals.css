@@ -128,3 +128,62 @@
     @apply font-sans;
   }
 }
+
+/* Sistema de colores por rol — no negociable */
+@layer utilities {
+  /* Cliente — teal */
+  .role-cliente {
+    @apply bg-teal-700 text-white;
+  }
+  .role-cliente-accent {
+    @apply text-teal-700;
+  }
+  .role-cliente-border {
+    @apply border-teal-700;
+  }
+  .role-cliente-light {
+    @apply bg-teal-50 text-teal-800;
+  }
+
+  /* Admin — indigo */
+  .role-admin {
+    @apply bg-indigo-800 text-white;
+  }
+  .role-admin-accent {
+    @apply text-indigo-800;
+  }
+  .role-admin-border {
+    @apply border-indigo-800;
+  }
+  .role-admin-light {
+    @apply bg-indigo-50 text-indigo-800;
+  }
+
+  /* Mesero — amber */
+  .role-mesero {
+    @apply bg-amber-600 text-white;
+  }
+  .role-mesero-accent {
+    @apply text-amber-600;
+  }
+  .role-mesero-border {
+    @apply border-amber-600;
+  }
+  .role-mesero-light {
+    @apply bg-amber-50 text-amber-800;
+  }
+
+  /* IA — purple */
+  .role-ia {
+    @apply bg-purple-700 text-white;
+  }
+  .role-ia-accent {
+    @apply text-purple-700;
+  }
+  .role-ia-border {
+    @apply border-purple-700;
+  }
+  .role-ia-light {
+    @apply bg-purple-50 text-purple-800;
+  }
+}
