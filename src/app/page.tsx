@@ -11,27 +11,33 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl">
         <Link
           href="/cliente/chat"
-          className="flex flex-col items-center gap-3 p-6 bg-teal-700 text-white rounded-xl hover:bg-teal-800 transition-colors shadow-md"
+          className="flex flex-col items-center gap-3 p-6 bg-teal-700 text-white rounded-xl hover:bg-teal-800 transition-all duration-200 shadow-md"
         >
-          <span className="text-3xl">💬</span>
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-base font-semibold">
+            IA
+          </div>
           <span className="font-bold text-base">Cliente</span>
           <span className="text-xs text-teal-200 text-center">Solicitar evento con asistente IA</span>
         </Link>
 
         <Link
           href="/admin"
-          className="flex flex-col items-center gap-3 p-6 bg-indigo-800 text-white rounded-xl hover:bg-indigo-900 transition-colors shadow-md"
+          className="flex flex-col items-center gap-3 p-6 bg-indigo-800 text-white rounded-xl hover:bg-indigo-900 transition-all duration-200 shadow-md"
         >
-          <span className="text-3xl">📊</span>
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-base font-semibold">
+            ADMIN
+          </div>
           <span className="font-bold text-base">Administrador</span>
           <span className="text-xs text-indigo-200 text-center">Tablero de cotizaciones y asignaciones</span>
         </Link>
 
         <Link
           href="/mesero"
-          className="flex flex-col items-center gap-3 p-6 bg-amber-600 text-white rounded-xl hover:bg-amber-700 transition-colors shadow-md"
+          className="flex flex-col items-center gap-3 p-6 bg-amber-600 text-white rounded-xl hover:bg-amber-700 transition-all duration-200 shadow-md"
         >
-          <span className="text-3xl">🍽️</span>
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-base font-semibold">
+            MES
+          </div>
           <span className="font-bold text-base">Mesero</span>
           <span className="text-xs text-amber-100 text-center">Panel de tareas y checklist</span>
         </Link>

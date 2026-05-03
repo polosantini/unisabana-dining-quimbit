@@ -91,9 +91,9 @@ function MeseroScanInner() {
       {status === "done" && (
         <div className="space-y-4">
           <div className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto">
-            <span className="text-4xl">✓</span>
+            <span className="text-lg font-semibold text-amber-700">OK</span>
           </div>
-          <h2 className="text-xl font-bold text-gray-900">¡Tarea completada!</h2>
+          <h2 className="text-xl font-bold text-gray-900">Tarea completada</h2>
           <div className="bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 text-sm space-y-1">
             <p>
               <span className="text-gray-500">Evento: </span>
@@ -122,7 +122,7 @@ function MeseroScanInner() {
       {status === "already_done" && (
         <div className="space-y-4">
           <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto">
-            <span className="text-4xl text-gray-400">✓</span>
+            <span className="text-sm font-semibold text-gray-500">Listo</span>
           </div>
           <h2 className="text-xl font-bold text-gray-700">Ya estaba completada</h2>
           <p className="text-sm text-gray-500">

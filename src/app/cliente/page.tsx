@@ -41,7 +41,7 @@ function StepIndicator({ current }: { current: number }) {
                   : "bg-white border-gray-300 text-gray-400"
               }`}
             >
-              {i < current ? "✓" : i + 1}
+              {i + 1}
             </div>
             <span
               className={`text-xs mt-1 font-medium text-center max-w-[70px] ${
@@ -406,9 +406,9 @@ function ClientePageInner() {
       {step === 3 && (
         <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm text-center space-y-4">
           <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto">
-            <span className="text-3xl">✓</span>
+            <span className="text-base font-semibold text-teal-700">OK</span>
           </div>
-          <h2 className="text-xl font-bold text-gray-900">¡Solicitud enviada!</h2>
+          <h2 className="text-xl font-bold text-gray-900">Solicitud enviada</h2>
           {submittedId && (
             <p className="text-sm font-mono font-bold text-teal-700 bg-teal-50 border border-teal-200 rounded-lg px-4 py-2 inline-block">
               #{submittedId}

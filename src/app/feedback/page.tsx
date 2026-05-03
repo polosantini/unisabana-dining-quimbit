@@ -47,9 +47,9 @@ function FeedbackInner() {
     return (
       <div className="max-w-sm mx-auto px-4 py-16 text-center space-y-4">
         <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center mx-auto">
-          <span className="text-4xl">✓</span>
+          <span className="text-base font-semibold text-teal-700">OK</span>
         </div>
-        <h2 className="text-xl font-bold text-gray-900">¡Gracias por tu feedback!</h2>
+        <h2 className="text-xl font-bold text-gray-900">Gracias por tu feedback</h2>
         <p className="text-gray-500 text-sm">
           Tu opinión nos ayuda a mejorar el servicio de Sabana Dining. Apreciamos tomarte el tiempo de respondernos.
         </p>
@@ -78,16 +78,18 @@ function FeedbackInner() {
           <label className="block text-sm font-semibold text-gray-800 mb-4">
             ¿Cómo calificarías el servicio recibido? *
           </label>
-          <div className="flex justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-3">
             {[1, 2, 3, 4, 5].map((n) => (
               <button
                 key={n}
                 onClick={() => setCalificacion(n)}
-                className={`text-4xl transition-transform hover:scale-110 ${
-                  n <= calificacion ? "text-amber-400" : "text-gray-200"
+                className={`min-w-[42px] rounded-full border px-3 py-2 text-sm font-semibold transition-colors ${
+                  n <= calificacion
+                    ? "bg-amber-500 text-white border-amber-500"
+                    : "bg-white text-gray-700 border-gray-200 hover:border-gray-300"
                 }`}
               >
-                ★
+                {n}
               </button>
             ))}
           </div>

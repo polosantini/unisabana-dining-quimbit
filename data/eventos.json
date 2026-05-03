@@ -106,9 +106,10 @@
       "tareas": {
         "setup_mesa": true,
         "servicio": false,
-        "limpieza": false
+        "limpieza": false,
+        "recoger_cocina": true
       },
-      "version": 5,
+      "version": 7,
       "historial": [
         {
           "fecha": "2026-04-29T11:00:00Z",
@@ -133,6 +134,16 @@
         {
           "fecha": "2026-05-02T20:16:21.528Z",
           "accion": "tarea_setup_mesa_completada",
+          "actor": "mesero"
+        },
+        {
+          "fecha": "2026-05-03T03:32:34.584Z",
+          "accion": "tarea_recoger_cocina_completada",
+          "actor": "mesero"
+        },
+        {
+          "fecha": "2026-05-03T03:32:34.608Z",
+          "accion": "tarea_recoger_cocina_completada",
           "actor": "mesero"
         }
       ]
